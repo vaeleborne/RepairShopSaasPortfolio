@@ -13,9 +13,33 @@ This repository is a **portfolio and architecture showcase** demonstrating syste
 
 > **Note:**  
 > This repository contains **architecture and data model documentation only**.  
-> The production source code is proprietary and intentionally not included.
+> The production source code is intentionally not included and remains proprietary.
 
 ---
+
+## Why This Project Exists
+
+Before pursuing software engineering, I worked as a repair technician in consumer electronics repair shops that used established POS, inventory, and ticketing systems.
+
+While these systems were functional and far better than ad-hoc solutions, day-to-day work still exposed gaps between how software models repairs and how repairs actually happen. Real workflows often involve edge cases such as partial repairs, warranty work, special orders tied to specific tickets, inter-location transfers, refurbished device sales, and customer approvals that evolve over time.
+
+This project was created to explore how a repair shop SaaS could be designed from the ground up with those realities in mind, emphasizing clear domain boundaries, normalized data modeling, and multi-tenant scalability.
+
+In addition to data modeling, the system is designed around thoughtful, role-aware APIs that serve the distinct needs of owners, managers, technicians, front-desk staff, and customers, while maintaining clear access boundaries and auditability.
+
+Rather than focusing on UI or implementation details, this repository documents the system design and data model needed to support complex, real-world operations in a maintainable and extensible way. The goal is to demonstrate how practical domain experience can inform thoughtful backend and system architecture.
+
+## What This Project Is Not
+
+This project is not a finished commercial product or a production-ready SaaS application.
+
+It does not include a user interface, live backend services, or deployment infrastructure. Instead, it focuses on the underlying system design, domain modeling, and data architecture that would support such implementations.
+
+This repository is also not an attempt to recreate or compete directly with any existing repair shop POS or management software. The goal is not feature parity, but thoughtful exploration of how complex, real-world repair workflows can be modeled cleanly and extensibly.
+
+Finally, this project is not opinionated about frontend frameworks or API technologies. While the data model is intentionally designed to support well-defined APIs for technicians, managers, owners, and customers, the implementation of those interfaces is outside the scope of this repository.
+
+
 
 ## Goals of This Project
 
@@ -48,7 +72,7 @@ This project was designed with two primary goals:
 
 ## Core Functional Areas
 
-The platform is organized into the following functional modules:
+The Repair Shop SaaS is organized into the following functional modules:
 
 ### 1. Multi-Tenant SaaS Foundation
 - Tenant-based isolation
